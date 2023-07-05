@@ -468,7 +468,8 @@ class FFXModelFactory:
                 print(X_unbiased)
                 print('    y_unbiased:')
                 print(y_unbiased)
-                sys.exit(1)
+                # sys.exit(1)
+                return None
 
             cur_unbiased_coefs = clf.coef_.copy()
             if cur_unbiased_coefs.shape == tuple():
